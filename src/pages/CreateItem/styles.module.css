@@ -1,0 +1,30 @@
+.containerBtn {
+    width: 100%;
+
+    .btnBack {
+        width: 100%;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+
+    .textArea {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}

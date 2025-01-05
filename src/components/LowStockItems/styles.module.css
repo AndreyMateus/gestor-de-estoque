@@ -1,0 +1,9 @@
+.container {
+    border: 2px solid aliceblue;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

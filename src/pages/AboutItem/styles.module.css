@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    border: 2px solid aliceblue;
+
+    p {
+        font-size: 1.4rem;
+    }
+}
