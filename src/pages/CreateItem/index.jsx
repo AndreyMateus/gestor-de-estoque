@@ -11,7 +11,7 @@ function handleForm(e, name, quantity, price, category, description) {
     const newProduct = {
         //! GERANDO ID ALETAÓRIO.
         id: Math.floor(Math.random() * 10000),
-        date: new Date().toLocaleString(),
+        date: new Date(),
         name,
         quantity: +quantity,
         price: +price,

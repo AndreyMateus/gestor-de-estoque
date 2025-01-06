@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         path: "/update/:productId",
         element: <UpdateItem />,
         loader: loadProduct,
-    }
+    },
 ]);
 
 export default router;

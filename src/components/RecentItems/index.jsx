@@ -11,20 +11,23 @@ export default function RecentItems() {
     // TODO: Uma lista dos itens adicionados nos últimos 10 dias.
 
     const productsContext = useContext(ProductsContext);
+    //! Convertendo as DATAS que foram salvas como "STRING" para o OBJETO "Date" e assim podermos manipulá-las.
+    productsContext[0].forEach(product => {
+        product.date = new Date(product.date);
+    });
 
-    const todayDate = new Date();
-    // console.log(todayDate);
+    //! Criando uma DATA LIMITE dos itens recentes, itens que tiverem até 10 DIAS atrás.
+    const limitDate = new Date();
+    limitDate.setDate(limitDate.getDate() - 10);
 
-    const recentAddProdutcs = productsContext.map(product => {
-
-
-
+    const recentProducts = productsContext[0].filter(product => {
+        return product.date >= limitDate;
     });
 
     return (
         <div className={styles.container}>
             <h2>QTD Itens Adicionados Recentemente</h2>
-            <p>...</p>
+            <p>{recentProducts.length}</p>
         </div>
     );
 }
