@@ -20,3 +20,5 @@ Como rodar o projeto no seu computador:
 3 - execute um "npm run dev".
 
 4 - Acesse o link do localhost que será gerado via CONSOLE.
+
+OBS: o FRONT-END/INTERFACES inclusive o DASHBOARD, estão sendo modficados para algo mais responsivo e que é utilizado em uma empresa.
