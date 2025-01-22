@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
 
 export default function AboutItem() {
-    // TODO: Deve possuir uma página que exibe informações detalhadas de um item, exibindo todas as suas propriedades, bem como botões para atualizar e excluir o item.
+    // Deve possuir uma página que exibe informações detalhadas de um item, exibindo todas as suas propriedades, bem como botões para atualizar e excluir o item.
 
     const [productLoad] = useLoaderData();
 

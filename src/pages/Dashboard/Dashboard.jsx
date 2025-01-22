@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 // Components
-import TotalDifferentItems from "../../components/TotalDifferentItems/index";
+import TotalDifferentItems from "../../components/TotalDifferentItems";
 import TotalItems from "../../components/TotalItems";
 import LowStockItems from "../../components/LowStockitems";
 import RecentItems from "../../components/RecentItems";
@@ -18,8 +18,8 @@ import { Link } from "react-router-dom";
 import ProductsContext from "../../context/ProductsContext";
 
 export default function Dashboard() {
-    // TODO: Toda a navegação na aplicação deve ser feita sem atualizar a página, utilizando client-side navigation.
-    // TODO: Todos os dados devem ser persistidos no armazenamento local (localStorage) do navegador para serem preservados após atualizar a página ou fechar a janela do app.
+    // Toda a navegação na aplicação deve ser feita sem atualizar a página, utilizando client-side navigation.
+    // Todos os dados devem ser persistidos no armazenamento local (localStorage) do navegador para serem preservados após atualizar a página ou fechar a janela do app.
 
     const productsLoaded = useLoaderData();
     const [products, setProducts] = useState(() => {

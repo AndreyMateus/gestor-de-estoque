@@ -22,7 +22,7 @@ function removeProduct(id, setProductsContext) {
 }
 
 export default function AllItemsStock() {
-    // TODO: Retornar TODOS OS ITEMS existents em STOCK, cada ITEM deve ter 3 BOTÕES, "VER MAIS DETALHES DO ITEM", "ATUALIZAR", "EXCLUIR".
+    // Retornar TODOS OS ITEMS existents em STOCK, cada ITEM deve ter 3 BOTÕES, "VER MAIS DETALHES DO ITEM", "ATUALIZAR", "EXCLUIR".
 
     const [productsContext, setProductsContext] = useContext(ProductsContext);
 

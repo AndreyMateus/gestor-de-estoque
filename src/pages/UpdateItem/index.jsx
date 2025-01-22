@@ -26,7 +26,7 @@ function handleForm(e, productLoad, name, quantity, price, category, description
 }
 
 export default function UpdateItem() {
-    // TODO: Também deve possuir uma tela de atualizar os dados de um item. Ela pode ter o mesmo formato da tela de criação de novos itens.
+    // Também deve possuir uma tela de atualizar os dados de um item. Ela pode ter o mesmo formato da tela de criação de novos itens.
 
     const [productLoad] = useLoaderData();
 

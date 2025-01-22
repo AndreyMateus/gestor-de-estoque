@@ -8,7 +8,7 @@ import { useContext } from "react";
 import ProductsContext from "../../context/ProductsContext";
 
 export default function RecentItems() {
-    // TODO: Uma lista dos itens adicionados nos últimos 10 dias.
+    // Uma lista dos itens adicionados nos últimos 10 dias.
 
     const productsContext = useContext(ProductsContext);
     //! Convertendo as DATAS que foram salvas como "STRING" para o OBJETO "Date" e assim podermos manipulá-las.

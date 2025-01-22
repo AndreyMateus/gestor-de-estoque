@@ -8,7 +8,7 @@ import { useContext } from "react";
 import ProductsContext from "../../context/ProductsContext";
 
 export default function ListLowStockItems() {
-    // TODO: listar os itens que estão com a QUANTIDADE menor que 10, listar em formato de LISTA, passando as PROPRIEDADES dos ITENS.
+    // Listar os itens que estão com a QUANTIDADE menor que 10, listar em formato de LISTA, passando as PROPRIEDADES dos ITENS.
 
     const [productsContext] = useContext(ProductsContext);
     const productsFiltered = productsContext.filter(product => {
