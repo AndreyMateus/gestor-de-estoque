@@ -6,12 +6,12 @@ import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 // Components
-import TotalDifferentItems from "../../components/TotalDifferentItems";
-import TotalItems from "../../components/TotalItems";
-import LowStockItems from "../../components/LowStockitems";
-import RecentItems from "../../components/RecentItems";
-import ListLowStockItems from "../../components/ListLowStockItems";
-import AllItemsStock from "../../components/AllItemsStock";
+import TotalDifferentItems from "../../components/TotalDifferentItems/index";
+import TotalItems from "../../components/TotalItems/index";
+import LowStockItems from "../../components/LowStockItems/index";
+import RecentItems from "../../components/RecentItems/index";
+import ListLowStockItems from "../../components/ListLowStockItems/index";
+import AllItemsStock from "../../components/AllItemsStock/index";
 import { Link } from "react-router-dom";
 
 // Contexts
