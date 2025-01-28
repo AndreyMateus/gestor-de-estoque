@@ -120,7 +120,7 @@ export default function UpdateItem() {
                         ></textarea>
                     </div>
 
-                    <button type="submit">Salvar</button>
+                    <button type="submit" className={styles.btn}>Salvar</button>
                 </form>
             </>
         </>

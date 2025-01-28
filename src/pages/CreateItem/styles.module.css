@@ -1,8 +1,13 @@
 .containerBtn {
+    display: flex;
+    place-content: center;
     width: 100%;
 
+
     .btnBack {
-        width: 100%;
+        font-size: 1.5rem;
+        padding: .2rem 2rem;
+        margin: auto;
     }
 }
 
@@ -12,8 +17,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
     gap: 10px;
+
+    h1 {
+        text-align: center;
+    }
 }
 
 .description {

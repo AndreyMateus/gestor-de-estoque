@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 // Hooks
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function handleForm(e, name, quantity, price, category, description) {
     e.preventDefault();
@@ -30,6 +30,8 @@ export default function CreateItem() {
     const [category, setCategory] = useState("");
     const [description, setDescription] = useState("");
 
+    const navigate = useNavigate();
+
     return (
         <>
             <div className={styles.containerBtn}>
@@ -39,6 +41,7 @@ export default function CreateItem() {
             <form
                 onSubmit={(e) => {
                     handleForm(e, name, quantity, price, category, description);
+                    navigate("/");
                 }}
                 className={styles.form}>
 
@@ -113,7 +116,9 @@ export default function CreateItem() {
                     ></textarea>
                 </div>
 
-                <button type="submit">Salvar</button>
+                <div className={styles.containerBtn}>
+                    <button type="submit" className={styles.btnBack}>Salvar</button>
+                </div>
             </form>
         </>
     );
