@@ -30,36 +30,24 @@ export default function Dashboard() {
     });
 
     return (
-        <>
+        <div className={styles.divContainer}>
             <ProductsContext.Provider value={[products, setProducts]}>
 
-                <div style={{
-                    display: "flex",
-                    justifyContent: "space-evenly",
-                    gap: "10px",
-                }}>
-                    <div className={styles.container}>
-                        <TotalDifferentItems />
-                        <TotalItems />
-                    </div>
-                    <div className={styles.container}>
-                        <LowStockItems />
-                        <RecentItems />
-                    </div>
-                </div>
-
                 <div className={styles.container}>
+                    <TotalDifferentItems />
+                    <TotalItems />
+                    <LowStockItems />
+                    <RecentItems />
                     <ListLowStockItems />
                 </div>
+
+                <Link to="/create" className={styles.containerBtn}><button className={styles.btnAddProduct}>Cadastrar Produto</button></Link>
 
                 <div className={styles.container}>
                     <AllItemsStock />
                 </div>
 
-                <div>
-                    <Link to="/create"><button>Cadastrar Produto</button></Link>
-                </div>
             </ProductsContext.Provider>
-        </>
+        </div>
     );
 }
